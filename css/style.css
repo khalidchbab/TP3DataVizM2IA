@@ -1,0 +1,40 @@
+
+/*
+ Author : Khalid CHBAB
+ Master 2 IA Lyon 1
+ Module : DataViz
+*/
+#svg {
+    display: block;
+    margin: auto;
+}
+.hidden {
+    display: none;
+}
+
+.department {
+    cursor: pointer;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: black;
+    stroke-width: .5px;
+}
+
+.department:hover {
+    stroke-width: 2px;
+}
+div.tooltip {
+    position: absolute;
+    opacity:0.8;
+    z-index:1000;
+    text-align:left;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    padding:8px;
+    color:#000;
+    background-color:#fff;
+    font: 12px sans-serif;
+    max-width: 300px;
+    height: 60px;
+}
