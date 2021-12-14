@@ -81,7 +81,7 @@ function drawMap(json, data, currentWeek) {
         
 }
 
-d3.csv("./TP3DataVizM2IA/data/covid-france-mars-avril.csv").then(function (data) {
+d3.csv("/TP3DataVizM2IA/data/covid-france-mars-avril.csv").then(function (data) {
     color.domain([
         d3.min(data, function (d) {
             return d.hosp;
@@ -91,7 +91,7 @@ d3.csv("./TP3DataVizM2IA/data/covid-france-mars-avril.csv").then(function (data)
         })
     ]);
 
-    d3.json("./TP3DataVizM2IA/data/map-france.geojson").then(function (json) {
+    d3.json("/TP3DataVizM2IA/data/map-france.geojson").then(function (json) {
         if (daysArraySet == false) {
             var i = 0
             while (data[i].dep == 1) {
